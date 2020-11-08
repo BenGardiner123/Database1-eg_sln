@@ -7,4 +7,53 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="username" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5734cda6-e8ef-41a9-a2a0-9954a82f4725" ChangeDateTime="11/08/2020 22:17:44">
+    <Property Name="ElementName" Value="[dbo].[Choice].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Choice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PlayerChoice" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6ae4d968-b980-4220-8368-13a527379dcf" ChangeDateTime="11/08/2020 22:18:52">
+    <Property Name="ElementName" Value="[dbo].[Player].[username]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Player]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Username" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8638174a-50a5-4d2f-aff0-1fd17e6f3af7" ChangeDateTime="11/08/2020 22:21:02">
+    <Property Name="ElementName" Value="[dbo].[Game].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Game]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DateTimeStarted" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="15e5b33a-3b5b-400d-a0e7-03c0026e9557" ChangeDateTime="11/08/2020 22:41:43">
+    <Property Name="ElementName" Value="[dbo].[Turn].[Player1Choice]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Turn]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="P1Choice" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dc49c570-8ab2-4196-816a-83c783122ba5" ChangeDateTime="11/08/2020 23:17:02">
+    <Property Name="ElementName" Value="[dbo].[Choice].[PlayerChoice]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Choice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rock" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="eecb7c6b-45ed-48e0-85d8-9072c2a345c6" ChangeDateTime="11/08/2020 23:18:14">
+    <Property Name="ElementName" Value="[dbo].[Choice].[Rock]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Choice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OptionName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0b1d6f53-f510-40d7-b575-b88efaf8cd0e" ChangeDateTime="11/08/2020 23:32:05">
+    <Property Name="ElementName" Value="[dbo].[Turn].[p1Chpice]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Turn]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="p1Choice" />
+  </Operation>
 </Operations>

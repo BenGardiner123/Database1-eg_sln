@@ -61,6 +61,8 @@
     <Build Include="Player.sql" />
     <Build Include="Turn.sql" />
     <Build Include="Leaderboard.sql" />
+    <Build Include="Choice.sql" />
+    <Build Include="Game.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1-eg.refactorlog" />

@@ -1,11 +1,15 @@
 ﻿CREATE TABLE [dbo].[Turn]
 (
-	[username] nvarchar(50) NOT NULL, 
-	[TurnID] datetime NOT NULL, 
-	[playerChoice] nvarchar(12) NOT NULL,
-	[aiChoice] nvarchar(50) NOT NULL, 
-	primary key (username, TurnID), 
-	foreign key (username) references Player, 
-    CONSTRAINT [CK_playerChoice_Column] CHECK (playerChoice in('Rock', 'Paper', 'Scissors')), 
-	CONSTRAINT [CK_aiChoice_Column] CHECK (aiChoice in('Rock', 'Paper', 'Scissors')) 
+	[Username] nvarchar(50) NOT NULL, 
+	[DateTimeStarted] DATETIME NOT NULL,
+    [TurnNumber] INT NOT NULL,
+    [Outcome] NVARCHAR(1) NOT NULL, 
+    [p1Choice] NVARCHAR(12) NOT NULL, 
+    [p2Choice] NVARCHAR(12) NOT NULL, 
+    primary key (DateTimeStarted, Username,  TurnNumber, p1Choice, p2Choice),
+	Foreign key (DateTimeStarted, Username) references GAME(DateTimeStarted, Username),
+    Foreign key (p1Choice) references Choice(OptionName),
+    Foreign key (p2Choice) references Choice(OptionName),
+	CONSTRAINT [CK_Outcome_Column] CHECK (Outcome in('W', 'L', 'D')) 
+
 )
