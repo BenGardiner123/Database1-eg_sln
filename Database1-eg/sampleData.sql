@@ -10,21 +10,51 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-begin
+--IF OBJECT_ID('Turn') IS NOT NULL
+--DROP TABLE Turn;
 
-delete from Turn
+--GO
+
+--IF OBJECT_ID('Player') IS NOT NULL
+--DROP TABLE Player;
 
 
-delete from Player
+
+--begin
+
+--delete from Turn
 
 
-INSERT INTO Player(username) VALUES
-('César Augusto Sandino'),
-('Humberto Ortega');
+--delete from Player
 
-INSERT INTO Turn(username, TurnID, playerChoice, aiChoice) VALUES
-('César Augusto Sandino', '20200618 10:34:09 AM', 'Rock', 'Paper'),
-('Humberto Ortega', '20200617 10:34:09 AM', 'Scissors', 'Paper'),
-('César Augusto Sandino', '20200917 10:34:09 AM', 'Rock', 'Scissors');
+--insert the check game data valid here
 
-end
+--INSERT INTO Player(username) VALUES
+--('César Augusto Sandino');
+
+
+--INSERT INTO Game(DateTimeStarted, Username, NumTurns) VALUES
+--('20200618 10:34:09 AM', 'César Augusto Sandino', 3);
+
+
+
+--INSERT INTO Choice(OptionName) VALUES
+--('Rock'), 
+--('Paper'), 
+--('Scissors'); 
+
+
+--INSERT INTO Player(username) VALUES
+--('César Augusto Sandino');
+
+
+-- update Game 
+--set ('20200618 10:34:09 AM', 'César Augusto Sandino', 3);
+
+
+INSERT INTO Turn(DateTimeStarted, TurnNumber, Username, Outcome, p1Choice, p2Choice) VALUES
+('20200618 10:34:09 AM','1', 'César Augusto Sandino','L', 'Rock', 'Paper');
+
+
+
+--end
