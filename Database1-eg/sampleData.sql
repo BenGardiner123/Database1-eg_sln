@@ -10,13 +10,22 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
---IF OBJECT_ID('Turn') IS NOT NULL
---DROP TABLE Turn;
-
---GO
+--IF OBJECT_ID('Game') IS NOT NULL
+--DROP TABLE Game;
 
 --IF OBJECT_ID('Player') IS NOT NULL
 --DROP TABLE Player;
+
+--IF OBJECT_ID('Turn') IS NOT NULL
+--DROP TABLE Turn;
+
+--IF OBJECT_ID('Choice') IS NOT NULL
+--DROP TABLE Choice;
+
+
+--GO
+
+
 
 
 
@@ -52,8 +61,8 @@ Post-Deployment Script Template
 --set ('20200618 10:34:09 AM', 'César Augusto Sandino', 3);
 
 
-INSERT INTO Turn(DateTimeStarted, TurnNumber, Username, Outcome, p1Choice, p2Choice) VALUES
-('20200618 10:34:09 AM','1', 'César Augusto Sandino','L', 'Rock', 'Paper');
+--INSERT INTO Turn(DateTimeStarted, TurnNumber, Username, Outcome, p1Choice, p2Choice) VALUES
+--('20200618 10:34:09 AM','1', 'César Augusto Sandino','L', 'Rock', 'Paper');
 
 
 
