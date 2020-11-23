@@ -1,2 +1,2 @@
 ﻿select *
-from Leaderboard
+from Leaderboard;

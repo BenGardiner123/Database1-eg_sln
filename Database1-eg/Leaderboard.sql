@@ -1,6 +1,7 @@
 ﻿CREATE VIEW Leaderboard as 
 
-SELECT played.Username as Player, (cast(wins.numwins as float)/cast(played.numplayed as float)) AS Winratio, played.numplayed as Turnsplayed
+SELECT played.Username as Player, (cast(wins.numwins as float)/cast(played.numplayed as float)) AS Winratio, 
+played.numplayed as Turnsplayed
 FROM 
 (	select username, count(*) as numwins
 	from Turn
