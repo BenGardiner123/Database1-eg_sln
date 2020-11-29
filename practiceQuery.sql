@@ -1,3 +1,15 @@
-﻿select * from
-last5wins
+﻿
+IF OBJECT_ID('Turn') IS NOT NULL
+DROP TABLE Turn;
 
+IF OBJECT_ID('Game') IS NOT NULL
+DROP TABLE Game;
+
+IF OBJECT_ID('Player') IS NOT NULL
+DROP TABLE Player;
+
+IF OBJECT_ID('Choice') IS NOT NULL
+DROP TABLE Choice;
+
+
+GO
